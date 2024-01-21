@@ -1,0 +1,262 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Document</title>
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Bree+Serif&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="reset.css">
+  <link rel="stylesheet" href="style.css">
+</head>
+
+
+
+
+<body>
+  <header class="main-head">
+    <div class="main-head-logo">
+      <img src="./assets/images/clipart708931.png" alt="pup-logo" class="pup-logo">
+      <p>Polytechnic University of the Philippines</p>
+    </div>
+    <nav class="main-head-nav">
+      <ul>
+          <li> <a href="main.html"> HOME </a> </li>
+          <li> <a href="#"> ABOUT </a> </li>
+          <li> <a href="#"> FORM </a> </li>
+      </ul>
+  </nav>
+    <div class="main-head-sm">
+      <a href="www.facebook.com"><div class="main-head-sm-fb"></div></a>
+      <a href="www.instagram.com"><div class="main-head-sm-in"></div></a>
+  </div>
+  </header>
+  <main>
+    <div class="form-header">
+        <img src="./assets/images/clipart708931.png" alt="pup-logo">
+        <span>Republic of the Philippines <br>Polytechnic University of the Philippines <br> Office of the Vice President for Student Affairs and Services <br> <p>Office of the Student Services</p></span>
+    </div>
+    
+    <form id="form" method="POST">
+      <h2>Application For New / Replacement of Identification Card</h2>
+      <section class="student-type-container">
+
+        <div class="transferee">
+          <input type="checkbox" id="transferee" name="Student Type" value="transferee"/>
+          <label for="transferee">Transferee</label>
+        </div>
+
+        <div class="shiftee">
+          <input type="checkbox" id="shiftee" name="Student Type" value="shiftee" />
+          <label for="shiftee">Shiftee</label>
+        </div>
+
+        <div class="lhs-shs">
+          <input type="checkbox" id="lhs" name="Student Type" value="lhs" />
+          <label for="lhs">LHS</label>
+
+          <input type="checkbox" id="shs" name="Student Type" value="shs" />
+          <label for="shs">SHS</label>
+        </div>
+
+        <div class="graduate-school">
+          <input type="checkbox" id="graduate-school" name="Student Type" value="graduate-school" />
+          <label for="graduate-school">Graduate School</label>
+        </div>
+
+        <div class="late-filling">
+          <input type="checkbox" id="late-filling" name="Student Type" value="late-filling" />
+          <label for="late-filling">Late Filling</label>
+        </div>
+
+        <div class="damaged">
+          <input type="checkbox" id="damaged" name="Student Type" value="damaged" />
+          <label for="damaged">Damaged</label>
+        </div>
+
+        <div class="undergrad">
+          <input type="checkbox" id="undergrad" name="Student Type" value="undergrad" />
+          <label for="undergrad">Undergrad</label>
+        </div>
+
+        <div class="open-university">
+          <input type="checkbox" id="open-university" name="Student Type" value="open-university" />
+          <label for="open-university">Open University</label>
+        </div>
+
+        <div class="old-id">
+          <input type="checkbox" id="old-id" name="Student Type" value="old-id" />
+          <label for="old-filling">Old ID</label>
+        </div>
+        
+        <div class="correction-of-entry">
+          <input type="checkbox" id="correction-of-entry" name="Student Type" value="correction-of-entry" />
+          <label for="correction-of-entry">Correction of Entry</label>
+        </div>
+
+        <div class="college-of-law">
+          <input type="checkbox" id="college-of-law" name="Student Type" value="college-of-law" />
+          <label for="college-of-law">College of Law</label>
+        </div>
+
+        <div class="institute-of-technology">
+          <input type="checkbox" id="institute-of-technology" name="Student Type" value="institute-of-technology" />
+          <label for="institute-of-technology">Institute of Technology</label>
+        </div>
+      </section>
+      
+      <div class="id-information-container">
+        <h2>ID Information</h2>
+
+        <!-- First Row -->
+        <div class="id-first-row">
+          <label for="student-number">Student Id</label>
+          <label for="first-name">First Name</label>
+          <label for="middle-name">Middle Name</label>
+          <label for="last-name">Last Name</label>
+
+          <input class="input" type="text" id="student-number" name="Student ID" required>
+          <input class="input" type="text" id="first-name" name="First Name">
+          <input class="input" type="text" id="middle-name" name="Middle Name">
+          <input class="input" type="text" id="last-name" name="Last Name">
+        </div>
+
+        <!-- Second Row -->
+        <div class="id-second-row">
+
+          <label for="">Gender</label>
+          <label for="date-of-birth">Date of Birth</label>
+          <label for="college">College</label>
+          
+          <div class="gender">
+            <input type="radio" id="gender" name="Gender" value="Male">
+            <p>Male</p>
+            <input type="radio" id="gender" name="Gender" value="Female">
+            <p>Female</p>
+          </div>
+          <input type="date" class="input" id="date-of-birth" name="Birthdate">
+          <input type="text" class="input" id="college" name="College">
+        </div>
+
+        <!-- Third Row -->
+        <div class="id-third-row">
+          <label for="course-section">Course, Yr. & Section</label>
+          <label for="phone-number">Phone/Mobile no.</label>
+          <label for="email">Email address</label>
+
+          <input type="text" class="input" id="course-section" name="Course and Section">
+          <input type="text" class="input" id="phone-number" name="Phone/Mobile No.">
+          <input type="text" class="input" id="email" name="Email Address" >
+        </div>
+
+        <!--Fourth Row  -->
+        <div class="id-fourth-row">
+          <label for="address">Address</label>
+          <input type="text" class="input" id="address" name="Address">
+        </div>
+        
+        <!--Fifth Row  -->
+        <div class="id-fifth-row">
+          <p>In case of emergency, please notify:</p>
+        </div>
+        
+        <!--Sixth Row-->
+        <div class="id-sixth-row">
+          <label for="emergency-name">Complete Name</label>
+          <label for="emergency-phone">Phone/Mobile no.</label>
+          <input type="text" class="input" id="emergency-name" name="Emergency Complete Name">
+          <input type="text" class="input" id="emergency-phone" name="Emergency Phone/Mobile No.">
+        </div>
+        
+        <!--Seventh Row-->
+        <div class="id-seventh-row">
+          <label for="emergency-address">Address</label>
+          <input type="text" class="input" id="emergency-address" name="Emergency Address">
+        </div>
+
+        <!--Eighth Row-->
+        <div class="id-eighth-row">
+          <input type="submit" id="submit-button">
+        </div>
+      </div>
+    </form>
+  </main>
+  <footer>
+    <div
+      id="message"
+      style="
+        display: none;
+        margin: 20px;
+        font-weight: bold;
+        color: green;
+        padding: 8px;
+        background-color: beige;
+        border-radius: 4px;
+        border-color: aquamarine;
+        ">
+    </div>
+  </footer>
+
+  <script>
+    document.getElementById("form").addEventListener("submit", function (e) {
+      e.preventDefault(); // Prevent the default form submission
+      document.getElementById("message").textContent = "Submitting..";
+      document.getElementById("message").style.display = "block";
+      document.getElementById("submit-button").disabled = true;
+
+      // Collect the form data
+      var formData = new FormData(this);
+      var keyValuePairs = [];
+      for (var pair of formData.entries()) {
+        keyValuePairs.push(pair[0] + "=" + pair[1]);
+      }
+
+      var formDataString = keyValuePairs.join("&");
+
+      // Send a POST request to your Google Apps Script
+      fetch(
+        "https://script.google.com/macros/s/AKfycbyPbEHyT4OpzsdjarBZ7kFmyPeOQ3ANTf2VodFvq6UyN97k0yq09n6peleb7Uh7YuTf/exec",
+        {
+          redirect: "follow",
+          method: "POST",
+          body: formDataString,
+          headers: {
+            "Content-Type": "text/plain;charset=utf-8",
+          },
+        }
+      )
+        .then(function (response) {
+          // Check if the request was successful
+          if (response) {
+            return response; // Assuming your script returns JSON response
+          } else {
+            throw new Error("Failed to submit the form.");
+          }
+        })
+        .then(function (data) {
+          // Display a success message
+          document.getElementById("message").textContent =
+            "Data submitted successfully!";
+          document.getElementById("message").style.display = "block";
+          document.getElementById("message").style.backgroundColor = "green";
+          document.getElementById("message").style.color = "beige";
+          document.getElementById("submit-button").disabled = false;
+          document.getElementById("form").reset();
+
+          setTimeout(function () {
+            document.getElementById("message").textContent = "";
+            document.getElementById("message").style.display = "none";
+          }, 2600);
+        })
+        .catch(function (error) {
+          // Handle errors, you can display an error message here
+          console.error(error);
+          document.getElementById("message").textContent =
+            "An error occurred while submitting the form.";
+          document.getElementById("message").style.display = "block";
+        });
+    });
+  </script>
+</body>
+</html>
